@@ -1,0 +1,118 @@
+body {
+  background-color: #4169e1;
+}
+
+h1 {
+  font-size: 72px;
+  color: #ffffff;
+  margin: 0;
+}
+
+h2 {
+  color: #ffffff;
+  margin: 0;
+  /* text-transform: uppercase; */
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: orange;
+  margin: 24px;
+  border-radius: 8px;
+  box-shadow: 8px 8px 12px 0px black;
+  width: 200px;
+  height: 200px;
+}
+
+/* .inner-container {
+  background-color: #ffffff;
+  width: 285px;
+  height: 285px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 5px royalblue;
+  transform: translate( 2.5%, 2.5%)
+} */
+
+img {
+  mask-image: linear-gradient(black, transparent);
+  mask-mode: alpha;
+  width: 200px;
+  filter: brightness(0%);
+}
+
+button {
+  margin: 24px 0px 0px 24px;
+  width: 32px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  background: none;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  color: orange;
+  border: 2px solid orange;
+}
+
+button.correct {
+  color: orange;
+  border-color: orange;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+}
+button.active {
+  color: orange;
+  border-color: orange;
+}
+
+.modal {
+  height: 300px;
+  width: 400px;
+  border: 2px solid black;
+  background: royalblue;
+  box-shadow: 0px 0px 0px 1569px rgb(0 0 0 / 40%);
+  border-radius: 8px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.modal h3 {
+  font-size: 48px;
+  color: white;
+}
+.modal button {
+  width: auto;
+  background: orange;
+  border-radius: 4px;
+  border: 2px solid black;
+  font-size: 40px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.modal button:hover {
+  color: black;
+}
